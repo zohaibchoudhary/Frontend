@@ -1,0 +1,20 @@
+[
+  {
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit commodi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ullam aut accusamus blanditiis aliquid est dolor quam voluptas eveniet id nulla, nostrum dicta earum, ratione et laboriosam in officiis.",
+    "name": "Angela Gonzalas",
+    "status": "Graphic Designer",
+    "pic": "https://github.com/shadcn.png"
+  },
+  {
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit commodi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ullam aut accusamus blanditiis aliquid est dolor quam voluptas eveniet id nulla, nostrum dicta earum, ratione et laboriosam in officiis.",
+    "name": "Robert Kawasaki",
+    "status": "Web Developer",
+    "pic": "https://github.com/shadcn.png"
+  },
+  {
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit commodi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ullam aut accusamus blanditiis aliquid est dolor quam voluptas eveniet id nulla, nostrum dicta earum, ratione et laboriosam in officiis.",
+    "name": "Melody Park",
+    "status": "Digital Marketing Expert",
+    "pic": "https://github.com/shadcn.png"
+  }
+]

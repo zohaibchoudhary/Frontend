@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: "Archivo", sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: antiquewhite;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px 0;
+}
+
+#searchBox {
+	width: 50%;
+	display: flex;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+#search {
+	width: 100%;
+	display: inline-block;
+	font-size: medium;
+	padding: 10px 12px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	border: none;
+	background-color: rgba(209, 209, 209, 0.56);
+	color: #212121;
+}
+
+#submit {
+	flex-shrink: 0;
+	padding: 10px 12px;
+	border-radius: 0 10px 10px 0;
+	background-color: #0d6efd;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+#submit:hover {
+	background-color: rgb(15, 165, 198);
+}
+.box {
+	margin: 30px auto;
+	width: 50%;
+}
+
+.box h3 {
+	text-align: center;
+}
+
+.box p {
+	text-align: left;
+	margin: auto auto;
+	padding: 30px;
+}
+
+ul.songs {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.songs li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.box {
+		width: 100%;
+	}
+
+	#searchBox {
+		width: 96%;
+	}
+
+	ul.songs li{
+		padding: 0 12px;
+	}
+	
+}

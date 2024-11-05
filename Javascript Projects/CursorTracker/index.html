@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cursor Pointer</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				height: 100vh;
+				width: 100vw;
+				position: relative;
+				background-color: black;
+			}
+
+			.pointer {
+				position: absolute;
+				background-color: red;
+				height: 2rem;
+				width: 2rem;
+				top: -10px;
+				left: -10px;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="pointer"></div>
+		</div>
+
+		<script>
+			let container = document.querySelector(".container");
+			let pointer = document.querySelector(".pointer");
+
+			function getClientXAndY(e) {
+				let x = e.clientX;
+				let y = e.clientY;
+
+        return {x, y}
+			}
+
+			container.addEventListener("pointermove", (e) => {
+				e.preventDefault();
+				const {x, y} = getClientXAndY();
+				console.log(x);
+				pointer.style.trasform = `translate(${x})px, (${y})px`;
+			});
+		</script>
+	</body>
+</html>

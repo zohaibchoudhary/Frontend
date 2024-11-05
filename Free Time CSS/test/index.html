@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			body {
+				background-color: #212121;
+				color: #fff;
+				display: flex;
+				gap: 2rem;
+			}
+
+			.main {
+				border: 1px solid teal;
+				flex-direction: row;
+				padding: 8px;
+        height: 200px;
+        width: 200px;
+			}
+
+			.main:focus {
+				background-color: teal;
+			}
+
+      .main img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: 2s ease-in-out;
+      }
+
+      .main img:hover {
+        scale: 1.1;
+      }
+		</style>
+	</head>
+	<body>
+		<div class="main" tabindex="0">
+			<img src="https://content-cdn.zameen.com/lahorerestaurants_15_a94da95928.jpg" alt="" />
+		</div>
+
+		<div class="main" tabindex="1">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chauburji_Chowk_Lahore.jpg/800px-Chauburji_Chowk_Lahore.jpg" alt="" />
+		</div>
+		<div class="main" tabindex="2">
+			<img src="https://images.unsplash.com/photo-1716792588036-c2834e00afc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" />
+		</div>
+		<div class="main" tabindex="3">
+			<img src="https://plus.unsplash.com/premium_photo-1684445034763-013f0525c40c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8" alt="" />
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const divs = document.querySelectorAll(".main");
+
+				divs.forEach((div) => {
+					div.addEventListener("keydown", (event) => {
+						let currentTabIndex = parseInt(div.getAttribute("tabindex"));
+
+						if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+							let nextTabIndex = (currentTabIndex + 1) % divs.length;
+							divs[nextTabIndex].focus();
+						} else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+							let nextTabIndex =
+								(currentTabIndex - 1 + divs.length) % divs.length;
+							divs[nextTabIndex].focus();
+						}
+					});
+				});
+
+				// Set initial focus to the first div
+				// divs[0].focus();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 1.3rem;
+	/* font-family: "Roboto", sans-serif; */
+	font-family: __Inter_aaf875, __Inter_Fallback_aaf875, Inter, ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hero h1 {
+	font-size: 3rem;
+}
+
+.hero p {
+	margin-bottom: 3em;
+}
+
+.container {
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+header {
+	background-color: #136c72;
+	padding: 1em 0;
+}
+
+.nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__item {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.nav__item--button {
+	background: #fff;
+	color: #136c72;
+	padding: 0.5em 1.5em;
+	border-radius: 10em;
+}
+
+.nav__item:hover {
+	opacity: 0.75;
+}
+
+.nav__item + .nav__item {
+	margin-left: 30px;
+}
+
+.hero {
+	background-color: #23424a;
+	color: #fff;
+	padding: 100px 0;
+}
+
+.hero_text {
+	max-width: 62%;
+}
+
+.hero_img {
+	max-width: 32%;
+}
+
+.hero_img img {
+	align-self: flex-start;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #38cfd9;
+	color: #23424a;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 0.75em 2em;
+	border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.75;
+}
+
+.primary-content {
+	width: 62%;
+	padding: 1em 0;
+}
+
+.section-title {
+	color: #136c72;
+}
+
+.sidebar {
+	margin-top: 2em;
+	width: 32%;
+	padding: 1em;
+	background-color: #136c72;
+	text-align: center;
+	color: #fff;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.col {
+	width: 100%;
+}

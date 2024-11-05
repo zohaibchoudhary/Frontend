@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Video player</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="video">
+				<div class="video-container">
+          <!-- <video autoplay controls loop src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video> -->
+					<div class="video-control-bar">
+            <div class="play-icons">
+							<box-icon class="play" name='play'></box-icon>
+							<box-icon name='pause'></box-icon>
+						</div>
+            <div class="video-timer"></div>
+            <div class="video-progress"></div>
+            <button>
+							<box-icon name='fullscreen' ></box-icon>
+						</button>
+          </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

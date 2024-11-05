@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HTML FORM</title>
+</head>
+<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
+    <div>
+    <h1>HTML FORM</h1>
+    <div>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" placeholder="Enter your first name">
+    </div>
+    
+    <div>
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" placeholder="Enter your last name" >
+    </div>
+    <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob"  placeholder="Enter your date of birth" >
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email"  placeholder="Enter your email" >
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password"  placeholder="Enter your password" >
+    </div>
+     <!-- Use required to take data strictly -->
+    <div>
+        <label for="gender">Gender</label>
+        <label for="M">Male</label>
+        <input type="radio" name="M" >
+        <label for="F">Female</label>
+        <input type="radio" name="F">
+        <label for="O">Others</label>
+        <input type="radio" name="O">
+    </div>
+    <div>
+        <label for="eligibility">Are you eligible?</label>
+        <input type="checkbox" name="eligibility" id="">
+    </div>
+    <!-- Use selected to auto select by default -->
+    <div>
+        <p>Select your favourite team for Worldcup 2023</p>
+        <select>
+            <option value="ind">India</option>
+            <option value="nz">New Zealand</option>
+            <option value="rsa" selected>South Africa</option>
+            <option value="aus">Australia</option>
+        </select>
+    </div>
+
+    <div>
+        <textarea name="ways" cols="30" rows="10">Write About Yourself</textarea>
+    </div>
+
+    <button type="submit">Submit Now</button>
+    <button type="reset">Reset Now</button>
+        
+</div>
+</body>
+</html>

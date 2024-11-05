@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+.main {
+  height: 100dvh;
+  width: 100vw;
+  background-color: #212328;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  position: absolute;
+  width: 100vw;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #fff;
+  font-weight: 700;
+  top: 5rem;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+form {
+  width: 50%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  gap: 1.25rem;
+  border: 1px solid #2e333d;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1.05rem 1.25rem;
+  background-color: #2e333d;
+  color: #fff;
+  border: none;
+  outline: 1px solid #a1a1aa;
+  border-radius: 0.75rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  background-color: #6b8afd;
+  color: #fff;
+  width: 100%;
+  padding: 15px 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 40px;
+  outline: #fff;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(82, 110, 212);
+}
+
+@media (min-width: 320px) and (max-width: 676px) {
+  form {
+    width: 95%;
+  }
+}
